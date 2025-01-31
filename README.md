@@ -72,4 +72,4 @@ To set up this portfolio project locally, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/portfolio.git
+   git clone https://github.com/Mbdulrohim/portfolio.git
