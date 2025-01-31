@@ -7,20 +7,21 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Prevent body scroll when mobile nav is open */
 body.menu-open {
   overflow: hidden;
@@ -32,7 +33,7 @@ body.menu-open {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
-  
+
   .cta-button {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;

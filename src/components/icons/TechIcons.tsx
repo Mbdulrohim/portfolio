@@ -28,7 +28,7 @@ export default function TechIcons({ compact = false }: { compact?: boolean }) {
       {icons.map(({ icon: Icon, name }) => (
         <motion.div
           key={name}
-          className="flex flex-col items-center"
+          className="flex flex-col items-center text-secondary"
           whileHover={{ scale: 1.1 }}
         >
           <div className={`p-2 rounded-lg bg-secondary/10 ${compact ? 'w-10 h-10' : 'w-12 h-12'} flex items-center justify-center`}>

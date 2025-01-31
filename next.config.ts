@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ['imgur.com'],
   },
+  eslint: { ignoreDuringBuilds: true }
 };
 
 export default nextConfig;

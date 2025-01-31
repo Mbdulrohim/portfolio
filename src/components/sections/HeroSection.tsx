@@ -9,7 +9,10 @@ export default function HeroSection() {
   const { theme } = useTheme();
 
   return (
-    <section id= 'home'className="min-h-screen flex items-center px-6 md:px-12 lg:px-20 text-center">
+    <section
+      id="home"
+      className="min-h-screen flex items-center px-6 md:px-12 lg:px-20 text-center"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -67,16 +70,17 @@ export default function HeroSection() {
           </motion.button>
 
           <motion.button
-  whileHover={{ scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  onClick={() => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  }}
-  className="border-2 border-accent text-accent px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium"
->
-  Contact Me
-</motion.button>
-
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              document
+                .getElementById("contact")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="border-2 border-accent text-accent px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium"
+          >
+            Contact Me
+          </motion.button>
         </div>
 
         {/* Tech Stack Grid */}
