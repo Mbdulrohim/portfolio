@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function About() {
   return (
     <div className="bg-background min-h-screen p-8">
+       <Head>
+        <title>About | Abdulrohim Mustapha</title>
+        <meta name="description" content="Learn more about my development journey and technical expertise" />
+      </Head>
       <div className="max-w-6xl mx-auto">
         {/* Bio Section */}
         <motion.section 

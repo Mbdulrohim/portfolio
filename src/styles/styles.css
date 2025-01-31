@@ -1,0 +1,16 @@
+:root {
+    --color-primary: #0F172A; /* Dark Blue – Professional, Futuristic */
+    --color-accent: #38BDF8; /* Cyber Blue – Innovation & Tech */
+    --color-highlight: #14B8A6; /* Turquoise – Modern & Fresh */
+    --color-background: #F1F5F9; /* Soft Gray – Clean & Minimal */
+    --color-text: #1E293B; /* Deep Gray for readability */
+  }
+  
+  .dark {
+    --color-primary: #1E293B; /* Slightly lighter dark blue for dark mode */
+    --color-accent: #0284C7; /* A deeper Cyber Blue for contrast */
+    --color-highlight: #0D9488; /* Darker turquoise for a balanced dark theme */
+    --color-background: #0F172A; /* Fully dark background */
+    --color-text: #E2E8F0; /* Light gray for contrast */
+  }
+  
