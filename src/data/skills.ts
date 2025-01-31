@@ -1,3 +1,4 @@
+import { IconType } from 'react-icons';
 import { 
     SiJavascript, 
     SiTypescript, 
@@ -9,19 +10,15 @@ import {
     SiKotlin, 
     SiPostgresql, 
     SiFirebase, 
-    // SiWeb3dotjs, 
-    // SiHardhat, 
     SiExpress, 
-    SiMongodb, 
     SiPrisma, 
-    // SiRedux, 
-    // SiFigma 
     
   } from 'react-icons/si';
   
 export interface Skill {
   name: string;
-  icon: any;
+  //@typescript-eslint/no-explicit-any
+  icon: IconType;
   level: number;
 }
 

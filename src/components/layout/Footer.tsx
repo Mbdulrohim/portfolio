@@ -1,11 +1,9 @@
 'use client'
 import { motion } from 'framer-motion'
-import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiCode } from 'react-icons/fi'
+import { FiGithub, FiTwitter, FiMail, FiCode } from 'react-icons/fi'
 import TechIcons from '@/components/icons/TechIcons'
-import { useTheme } from '@/context/ThemeContext'
 
 export default function Footer() {
-  const { theme } = useTheme()
 
   return (
     <footer className="bg-primary text-background py-12 mt-20">

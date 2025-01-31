@@ -1,13 +1,11 @@
 'use client'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FiCode, FiServer, FiSmartphone, FiMail, FiX, FiMenu, FiGithub, FiLinkedin } from 'react-icons/fi'
+import { FiCode, FiServer, FiSmartphone, FiMail, FiX, FiMenu, FiGithub } from 'react-icons/fi'
 import Link from 'next/link'
-import { useTheme } from '@/context/ThemeContext'
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
-  const { theme } = useTheme()
 
   const navItems = [
     { id: 'projects', label: 'Projects', icon: FiCode },

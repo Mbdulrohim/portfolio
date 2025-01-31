@@ -6,7 +6,8 @@ import { Button } from '@/components/ui/Button';
 import { FiGithub, FiSend, FiMail } from 'react-icons/fi';
 
 export default function ContactSection() {
-    const [loading, setLoading] = useState(false);
+            {/**  @typescript-eslint/no-unused-vars*/}
+            const [loading] = useState(false);
 
   return (
     <section className="py-20" id='contact'>
@@ -17,9 +18,11 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto text-center"
         >
-          <h2 className="text-4xl font-bold mb-6">Let's Connect</h2>
+          <h2 className="text-4xl font-bold mb-6">Let&apos;s Connect</h2>
+
           <p className="text-text/80 mb-12">
-            Have a project in mind? Let's discuss how I can help bring it to life.
+          
+            Have a project in mind? Let&apos;s discuss how I can help bring it to life.
           </p>
 
           <form className="space-y-6 mb-16">

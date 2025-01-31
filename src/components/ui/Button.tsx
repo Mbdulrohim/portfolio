@@ -1,10 +1,10 @@
 'use client';
-import { motion } from 'framer-motion';
+import { motion, HTMLMotionProps } from 'framer-motion';
 
 type ButtonProps = {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary';
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+} & HTMLMotionProps<'button'>; // This will ensure motion props are correctly passed to motion.button
 
 export function Button({ children, variant = 'primary', ...props }: ButtonProps) {
   return (
@@ -16,7 +16,7 @@ export function Button({ children, variant = 'primary', ...props }: ButtonProps)
           ? 'bg-accent text-white'
           : 'bg-background dark:bg-primary/20 text-text border border-accent'
       }`}
-      {...props}
+      {...props} // Spread the rest of the props
     >
       {children}
     </motion.button>

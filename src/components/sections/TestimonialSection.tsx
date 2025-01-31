@@ -1,11 +1,14 @@
-'use client';
-import { motion } from 'framer-motion';
+"use client";
+{
+}
+
+import { motion } from "framer-motion";
 
 const testimonials = [
   {
-    name: 'Client Name',
-    role: 'CEO, Tech Startup',
-    text: 'Abdulrohim delivered exceptional results on our blockchain project...',
+    name: "Client Name",
+    role: "CEO, Tech Startup",
+    text: "Abdulrohim delivered exceptional results on our blockchain project...",
   },
   // Add more testimonials
 ];
@@ -14,7 +17,7 @@ export default function TestimonialsSection() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -35,7 +38,8 @@ export default function TestimonialsSection() {
               viewport={{ once: true }}
               className="p-8 bg-background dark:bg-primary/10 rounded-xl shadow-lg"
             >
-              <p className="text-text/80 mb-6">"{testimonial.text}"</p>
+
+              <p className="text-text/80 mb-6">&quot;{testimonial.text}&quot;</p>
               <div className="border-t border-text/20 pt-6">
                 <h4 className="font-semibold">{testimonial.name}</h4>
                 <p className="text-sm text-text/60">{testimonial.role}</p>

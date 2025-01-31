@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { projects } from '@/data/projects';
+import { Project, projects } from '@/data/projects';
 import { Button } from '@/components/ui/Button';
 import Image from 'next/image';
 
@@ -26,16 +26,17 @@ export default function ProjectsSection() {
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap gap-4 justify-center mb-12">
-          {['all', 'web', 'blockchain', 'mobile'].map((category) => (
-            <Button
-              key={category}
-              variant={selectedCategory === category ? 'primary' : 'secondary'}
-              onClick={() => setSelectedCategory(category as any)}
-            >
-              {category}
-            </Button>
-          ))}
-        </div>
+  {(['all', 'web', 'blockchain', 'mobile'] as ('all' | 'web' | 'blockchain' | 'mobile')[]).map((category) => (
+    <Button
+      key={category}
+      variant={selectedCategory === category ? 'primary' : 'secondary'}
+      onClick={() => setSelectedCategory(category)}
+    >
+      {category}
+    </Button>
+  ))}
+</div>
+
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
