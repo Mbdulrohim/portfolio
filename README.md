@@ -1,40 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Portfolio
 
-## Getting Started
+Welcome to my personal portfolio! This repository showcases a collection of my web, mobile, and blockchain projects that demonstrate my skills in software development. Feel free to explore the projects listed below, where you can find live demos, source code, and detailed descriptions of each project.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [About Me](#about-me)
+- [Projects](#projects)
+  - [HooBank](#hoobank)
+  - [Summarize Articles with OpenAI GPT-4](#summarize-articles-with-openai-gpt-4)
+  - [Criterion Life App](#criterion-life-app)
+  - [Solana BuyBot](#solana-buybot)
+  - [Smart Contracts](#smart-contracts)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [License](#license)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About Me
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+I am a passionate software developer with experience in web development, mobile apps, and blockchain technology. I enjoy creating meaningful and functional applications that solve real-world problems. This portfolio highlights my best work, from responsive UI designs to innovative blockchain solutions.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Projects
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+### HooBank
+**Category:** Web  
+**Description:** A modern and responsive UI design for a bank landing page with all necessary sections and features.  
+**Tech Stack:** NodeJS, React, TypeScript, Netlify, TailwindCSS  
+**Demo:** [HooBank Demo](https://bank-by-doyex.netlify.app/)  
+**GitHub:** [HooBank GitHub](https://github.com/mbdulrohim)  
+![HooBank](public/bank.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Summarize Articles with OpenAI GPT-4
+**Category:** Web  
+**Description:** An open-source article summarizer that turns long articles into concise summaries using the GPT-4 API.  
+**Tech Stack:** React.js, Node.js, Express, TailwindCSS, ChatGPT API  
+**Demo:** [Summarize Articles Demo](https://combotx-article-sumz.netlify.app/)  
+**GitHub:** [Summarize Articles GitHub](https://github.com/Mbdulrohim)  
+![Summarize Articles](public/sumz.png)
 
-## Learn More
+### Criterion Life App
+**Category:** Mobile  
+**Description:** A comprehensive app that helps you manage health, wellness, and lifestyle with ease.  
+**Tech Stack:** Kotlin, Material3, Jetpack Compose, Firebase, Google Auth  
+**Demo:** [Criterion Life App on Google Play](https://play.google.com/store/apps/details?id=com.doyextech.thecriterion&hl=en)  
+**GitHub:** [Criterion Life GitHub](https://github.com/Mbdulrohim)  
+![Criterion Life App](public/clapp.png)
 
-To learn more about Next.js, take a look at the following resources:
+### Solana BuyBot
+**Category:** Blockchain  
+**Description:** A Solana BuyBot that notifies users when a set token is bought in a Telegram group.  
+**Tech Stack:** Telegram API, JavaScript, Solana Web3.js, AWS, Canvas  
+**Demo:** [Solana BuyBot Demo](https://t.me/@BBirdBuyBot)  
+**GitHub:** [Solana BuyBot GitHub](https://github.com/mbdulrohim)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+### Smart Contracts
+**Category:** Blockchain  
+**Description:** Smart contracts deployed on the core blockchain and Ethereum (TestNets).  
+**Tech Stack:** Solidity, Hardhat, CoreDAO Dev Tools, Ethers.js, Testnet, EVM  
+**Demo:** [Smart Contracts on TestNet](https://scan.test.btcs.network/address/0x6aDEb2741D0dd6801528B1C9EC8fDc2E4474965B)  
+**GitHub:** [Smart Contracts GitHub](https://github.com/mbdulrohim)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- **Web Development:** NodeJS, React, TypeScript, TailwindCSS, Express
+- **Mobile Development:** Kotlin, Jetpack Compose, Firebase, Google Auth
+- **Blockchain Development:** Solidity, Hardhat, Solana Web3.js, Ethers.js, CoreDAO Dev Tools
+- **Deployment & Hosting:** Netlify, AWS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Setup Instructions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+To set up this portfolio project locally, follow these steps:
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/<your-username>/portfolio.git
