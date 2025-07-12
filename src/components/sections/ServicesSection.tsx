@@ -27,7 +27,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-20 bg-primary/5" id='services'>
+    <section className="py-20 bg-background-secondary" id='services'>
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0 }}
@@ -35,8 +35,8 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Services</h2>
-          <p className="text-text/80 max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-4 text-text-primary">Services</h2>
+          <p className="text-text-secondary max-w-2xl mx-auto">
             Comprehensive solutions for modern digital challenges
           </p>
         </motion.div>
@@ -49,11 +49,11 @@ export default function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-8 bg-background dark:bg-primary/10 rounded-xl shadow-lg"
+              className="p-8 bg-background-elevated rounded-xl shadow-custom-lg hover:shadow-custom-lg transition-all duration-300 border border-color-border"
             >
-              <service.icon className="w-12 h-12 text-accent mb-6" />
-              <h3 className="text-xl font-semibold mb-4">{service.title}</h3>
-              <p className="text-text/80">{service.description}</p>
+              <service.icon className="w-12 h-12 text-accent-600 mb-6" />
+              <h3 className="text-xl font-semibold mb-4 text-text-primary">{service.title}</h3>
+              <p className="text-text-secondary">{service.description}</p>
             </motion.div>
           ))}
         </div>

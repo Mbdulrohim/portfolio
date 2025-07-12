@@ -18,7 +18,7 @@ export default function MobileNav() {
     <div className="md:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 rounded-lg hover:bg-accent/10 transition-colors text-primary"
+        className="p-2 rounded-lg hover:bg-accent-50 dark:hover:bg-accent-900 transition-colors text-text-primary"
         aria-label="Open navigation menu"
       >
         {isOpen ? (
@@ -34,9 +34,9 @@ export default function MobileNav() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 top-16 bg-surface/95 backdrop-blur-lg z-40"
+            className="fixed inset-0 top-16 bg-background-primary/95 backdrop-blur-lg z-40"
           >
-            <nav className="p-4 border-t border-primary/10 bg-primary">
+            <nav className="p-4 border-t border-color-border bg-background-secondary">
               <ul className="space-y-2">
                 {navItems.map((item, index) => (
                   <motion.li
@@ -48,14 +48,14 @@ export default function MobileNav() {
                     <Link
                       href={`#${item.id}`}
                       onClick={() => setIsOpen(false)}
-                      className="flex text-accent items-center gap-4 p-3 rounded-lg hover:bg-accent/10 transition-colors group"
+                      className="flex text-text-primary items-center gap-4 p-3 rounded-lg hover:bg-accent-50 dark:hover:bg-accent-900 transition-colors group"
                     >
-                      <item.icon className="w-5 h-5 text-accent shrink-0" />
-                      <span className="text-accent font-medium">
+                      <item.icon className="w-5 h-5 text-accent-600 shrink-0" />
+                      <span className="text-text-primary font-medium">
                         {item.label}
                       </span>
                       <motion.span
-                        className="ml-auto h-px bg-accent/20 flex-1 transition-all group-hover:bg-accent/50"
+                        className="ml-auto h-px bg-accent-600/20 flex-1 transition-all group-hover:bg-accent-600/50"
                         initial={{ width: 0 }}
                         animate={{ width: '100%' }}
                         transition={{ duration: 0.3 }}
@@ -66,17 +66,16 @@ export default function MobileNav() {
               </ul>
 
               {/* Social Links Section */}
-              <div className="mt-8 pt-6 border-t border-primary/10">
+              <div className="mt-8 pt-6 border-t border-color-border">
                 <div className="flex justify-center gap-6">
                   <a
                     href="https://github.com/Mbdulrohim"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-lg hover:bg-accent/10 transition-colors"
+                    className="p-2 rounded-lg hover:bg-accent-50 dark:hover:bg-accent-900 transition-colors"
                   >
-                    <FiGithub className="w-6 h-6 text-accent hover:text-primary" />
+                    <FiGithub className="w-6 h-6 text-accent-600 hover:text-accent-700" />
                   </a>
-                
                 </div>
               </div>
             </nav>

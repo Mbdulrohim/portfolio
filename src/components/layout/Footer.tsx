@@ -6,7 +6,7 @@ import TechIcons from '@/components/icons/TechIcons'
 export default function Footer() {
 
   return (
-    <footer className="bg-primary text-background py-12 mt-20">
+    <footer className="bg-primary-900 text-white py-12 mt-20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -22,23 +22,23 @@ export default function Footer() {
             >
               Abdulrohim Mustapha
             </motion.h3>
-            <p className="text-sm text-background/80 leading-relaxed">
+            <p className="text-sm text-surface-300 leading-relaxed">
               Building innovative solutions across Web3, mobile, and cloud platforms
             </p>
             <div className="flex gap-4 mt-4">
               <a
                 href="mailto:your@email.com"
-                className="p-2 hover:bg-accent/10 rounded-lg transition-colors"
+                className="p-2 hover:bg-accent-600/10 rounded-lg transition-colors"
                 aria-label="Send email"
               >
-                <FiMail className="w-5 h-5" />
+                <FiMail className="w-5 h-5 text-accent-400" />
               </a>
               <a
                 href="https://github.com/yourprofile"
-                className="p-2 hover:bg-accent/10 rounded-lg transition-colors"
+                className="p-2 hover:bg-accent-600/10 rounded-lg transition-colors"
                 aria-label="GitHub profile"
               >
-                <FiCode className="w-5 h-5" />
+                <FiCode className="w-5 h-5 text-accent-400" />
               </a>
             </div>
           </div>
@@ -55,9 +55,9 @@ export default function Footer() {
                   >
                     <a 
                       href={`#${link.toLowerCase()}`} 
-                      className="text-background/80 hover:text-accent transition-colors flex items-center gap-2"
+                      className="text-surface-300 hover:text-accent-400 transition-colors flex items-center gap-2"
                     >
-                      <span className="text-accent">▹</span>
+                      <span className="text-accent-400">▹</span>
                       {link}
                     </a>
                   </motion.li>
@@ -88,7 +88,7 @@ export default function Footer() {
                   href={url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-background/80 hover:text-accent transition-colors"
+                  className="flex items-center gap-2 text-surface-300 hover:text-accent-400 transition-colors"
                   whileHover={{ x: 5 }}
                 >
                   <Icon className="w-5 h-5" />
@@ -100,10 +100,10 @@ export default function Footer() {
         </motion.div>
 
         {/* Copyright */}
-        <div className="border-t border-background/20 pt-8 text-center">
-          <p className="text-sm text-background/80">
+        <div className="border-t border-surface-600 pt-8 text-center">
+          <p className="text-sm text-surface-300">
             © {new Date().getFullYear()} Abdulrohim Mustapha. Crafted with
-            <span className="text-accent mx-1">⚡</span>
+            <span className="text-accent-400 mx-1">⚡</span>
             by a developer for developers
           </p>
         </div>
