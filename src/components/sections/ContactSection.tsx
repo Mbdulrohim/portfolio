@@ -10,7 +10,7 @@ export default function ContactSection() {
             const [loading] = useState(false);
 
   return (
-    <section className="py-20" id='contact'>
+    <section className="py-20 bg-background-primary" id='contact'>
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0 }}
@@ -18,10 +18,9 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="max-w-2xl mx-auto text-center"
         >
-          <h2 className="text-4xl font-bold mb-6">Let&apos;s Connect</h2>
+          <h2 className="text-4xl font-bold mb-6 text-text-primary">Let&apos;s Connect</h2>
 
-          <p className="text-text/80 mb-12">
-          
+          <p className="text-text-secondary mb-12">
             Have a project in mind? Let&apos;s discuss how I can help bring it to life.
           </p>
 
@@ -30,46 +29,52 @@ export default function ContactSection() {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full px-4 py-3 rounded-lg bg-background dark:bg-primary/10 border border-text/20"
+                className="w-full px-4 py-3 rounded-lg bg-background-elevated border border-color-border focus:border-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-600/20 transition-colors text-text-primary placeholder-text-muted"
               />
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full px-4 py-3 rounded-lg bg-background dark:bg-primary/10 border border-text/20"
+                className="w-full px-4 py-3 rounded-lg bg-background-elevated border border-color-border focus:border-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-600/20 transition-colors text-text-primary placeholder-text-muted"
               />
             </div>
             <textarea
               placeholder="Message"
               rows={5}
-              className="w-full px-4 py-3 rounded-lg bg-background dark:bg-primary/10 border border-text/20"
+              className="w-full px-4 py-3 rounded-lg bg-background-elevated border border-color-border focus:border-accent-600 focus:outline-none focus:ring-2 focus:ring-accent-600/20 transition-colors text-text-primary placeholder-text-muted"
             />
             <Button
-        type="submit"
-        className="w-full flex items-center justify-center gap-2 bg-accent hover:bg-accent/80 transition-all py-3 px-6 rounded-lg font-semibold"
-        disabled={loading}
-      >
-        {loading ? (
-          <>
-            <span className="animate-spin border-2 border-white border-t-transparent rounded-full w-5 h-5"></span>
-            Sending...
-          </>
-        ) : (
-          <>
-            <FiSend className="w-5 h-5" />
-            Send Message
-          </>
-        )}
-      </Button>
+              type="submit"
+              className="w-full flex items-center justify-center gap-2 bg-accent-600 hover:bg-accent-700 text-white transition-all py-3 px-6 rounded-lg font-semibold shadow-custom-md hover:shadow-custom-lg"
+              disabled={loading}
+            >
+              {loading ? (
+                <>
+                  <span className="animate-spin border-2 border-white border-t-transparent rounded-full w-5 h-5"></span>
+                  Sending...
+                </>
+              ) : (
+                <>
+                  <FiSend className="w-5 h-5" />
+                  Send Message
+                </>
+              )}
+            </Button>
           </form>
 
           <div className="flex justify-center gap-6">
-            <a href="mailto:doyextech@gmail.com" className="text-accent hover:text-accent/80">
+            <a 
+              href="mailto:doyextech@gmail.com" 
+              className="text-accent-600 hover:text-accent-700 transition-colors p-2 rounded-lg hover:bg-accent-50 dark:hover:bg-accent-900"
+            >
               <FiMail className="w-8 h-8" />
             </a>
-            <a href="https://github.com/mbdulrohim" className="text-accent hover:text-accent/80">
+            <a 
+              href="https://github.com/mbdulrohim" 
+              className="text-accent-600 hover:text-accent-700 transition-colors p-2 rounded-lg hover:bg-accent-50 dark:hover:bg-accent-900"
+            >
               <FiGithub className="w-8 h-8" />
             </a>
-            {/* <a href="#" className="text-accent hover:text-accent/80">
+            {/* <a href="#" className="text-accent-600 hover:text-accent-700 transition-colors">
               <FiLinkedin className="w-8 h-8" />
             </a> */}
           </div>

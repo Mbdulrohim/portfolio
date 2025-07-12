@@ -4,7 +4,7 @@ import { skills } from '@/data/skills';
 
 export default function AboutSection() {
   return (
-    <section className="py-20 bg-primary/5">
+    <section className="py-20 bg-background-secondary">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0 }}
@@ -14,8 +14,8 @@ export default function AboutSection() {
         >
           {/* Left Column */}
           <div>
-            <h2 className="text-4xl font-bold mb-6">About Me</h2>
-            <p className="text-text/80 mb-8">
+            <h2 className="text-4xl font-bold mb-6 text-text-primary">About Me</h2>
+            <p className="text-text-secondary mb-8 leading-relaxed">
               Full-stack developer with expertise in building cross-platform solutions 
               using modern web and blockchain technologies. Passionate about creating 
               efficient, scalable applications with great user experiences.
@@ -30,15 +30,15 @@ export default function AboutSection() {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="p-4 bg-background dark:bg-primary/10 rounded-lg"
+                className="p-4 bg-background-elevated rounded-lg shadow-custom-sm border border-color-border"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <skill.icon className="w-6 h-6 text-accent" />
-                  <span className="font-medium">{skill.name}</span>
+                  <skill.icon className="w-6 h-6 text-accent-600" />
+                  <span className="font-medium text-text-primary">{skill.name}</span>
                 </div>
-                <div className="h-2 bg-gray-200 rounded-full">
+                <div className="h-2 bg-surface-200 dark:bg-surface-700 rounded-full">
                   <div 
-                    className="h-full bg-accent rounded-full transition-all duration-1000"
+                    className="h-full bg-accent-600 rounded-full transition-all duration-1000"
                     style={{ width: `${skill.level}%` }}
                   />
                 </div>

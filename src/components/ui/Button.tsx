@@ -11,10 +11,10 @@ export function Button({ children, variant = 'primary', ...props }: ButtonProps)
     <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      className={`px-6 py-3 rounded-lg font-medium transition-colors ${
+      className={`px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-custom-sm hover:shadow-custom-md ${
         variant === 'primary'
-          ? 'bg-accent text-white'
-          : 'bg-background dark:bg-primary/20 text-text border border-accent'
+          ? 'bg-accent-600 hover:bg-accent-700 text-white'
+          : 'bg-background-elevated text-text-primary border border-accent-600 hover:bg-accent-50 dark:hover:bg-accent-900'
       }`}
       {...props} // Spread the rest of the props
     >
